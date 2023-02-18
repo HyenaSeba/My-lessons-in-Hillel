@@ -9,7 +9,9 @@ while True:
                         'You can type "q" to quit the program at any point.\n'
                         'Type: Lite or Pro for choosing respected mode: ')
 
-# Lite mode calculator is activated
+# Lite mode calculator is activated. I know there can be other UpperCases but we haven't learnt lowercase function yet
+# and I didn't want to bother myselft with listing all possible UpperCases in that word. However, program doesn't crash
+# if you won't follow instructions, instead it gives you new try.
     if choose_mode == "lite" or choose_mode == "Lite":
         print("You've choose Lite mode.")
 
@@ -44,6 +46,9 @@ while True:
                     print(lite_first_number * lite_second_number)
                     break
                 elif lite_operation == '/':
+                    if lite_second_number == 0 or lite_second_number == -0:
+                        print("It's first grade math, you can't do that. Try again.")
+                        continue
                     print(lite_first_number / lite_second_number)
                     break
                 else:
@@ -92,6 +97,9 @@ while True:
                     print(pro_first_number * pro_second_number)
                     break
                 elif pro_operation == '/':
+                    if pro_second_number == 0 or pro_second_number == -0:
+                        print("It's first grade math, you can't do that. Try again.")
+                        continue
                     print(pro_first_number / pro_second_number)
                     break
                 elif pro_operation == '%':
@@ -101,6 +109,9 @@ while True:
                     print(pro_first_number ** pro_second_number)
                     break
                 elif pro_operation == '//':
+                    if pro_second_number == 0 or pro_second_number == -0:
+                        print("It's first grade math, you can't do that. Try again.")
+                        continue
                     print(pro_first_number // pro_second_number)
                     break
                 else:

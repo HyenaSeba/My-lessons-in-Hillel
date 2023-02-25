@@ -32,6 +32,7 @@ while True:
                     continue
                 break
 
+            # Loop to keep the user at this question
             while True:
                 try:
                     lite_second_number = input("Now, I'm gonna need a second number: ")
@@ -97,6 +98,7 @@ while True:
                     continue
                 break
 
+            # Loop to keep the user at this question
             while True:
                 try:
                     pro_second_number = input("Now, I'm gonna need a second number: ")

@@ -51,8 +51,3 @@ last = new_str.rfind('h')
 my_str = new_str[0:first+1] + new_str[first+1:last].replace('h', 'H') + new_str[last:]
 
 print(my_str)
-
-
-
-
-

@@ -16,8 +16,8 @@ print(my_results)
 
 # Task 3
 
-my_list = [1, 20, 213, -102, 2312, -21312, 22, 1241]
 last_sum = my_list[-1] + my_list[-2]
+my_list = [1, 20, 213, -102, 2312, -21312, 22, 1241]
 
 if len(my_list) < 2:
     my_list.append(0)

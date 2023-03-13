@@ -31,4 +31,3 @@ my_str = "mystring"
 new_my_str = (my_str + my_str[::-1]) if len(my_str) < 5 else my_str
 
 print(new_my_str)
-
